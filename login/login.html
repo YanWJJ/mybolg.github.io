@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Login</title>
+	<link rel="stylesheet" href="css/login.css" />
+</head>
+<body>
+	<div id="h1">
+		<h3 id="remind">ywj & yyl</h3>
+		<input type="text" id="user" placeholder="Account" autofocus="true" />
+		<input type="password" id="pswd" placeholder="Password" />
+		<input type="button" id="login" value="Log in" />
+	</div>
+</body>
+</html>
+<script>
+	var inp = document.getElementsByTagName("input");
+	function getinformation(user, pswd){
+		var name = user.value;
+		var pswd = pswd.value;
+		alert(name);
+		alert(pswd);
+		
+	}
+	inp[2].addEventListener("click", function(){
+		getinformation(inp[0], inp[1]);
+	}, false);
+	// alert(inp.length);
+	// for(var i=0,len=inp.length; i<len; i++){
+	// 	inp[i].onclick = function(event){
+	// 		alert(this.id);
+	// 		this.onclick = function(event){
+	// 			window.event.returnValue = false;
+	// 			event.preventDafult();
+	// 		}
+	// 	}
+	// }
+</script>
